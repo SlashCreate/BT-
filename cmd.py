@@ -9,3 +9,9 @@ def command(cmd, args):
   if cmd == 'custom':
     # args[0] is the same as command name
     print(args[1])
+
+def read(file):
+  myfile = open(file, "r")
+  for line in myfile:
+    print(line)
+  myfile.close()
