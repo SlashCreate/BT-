@@ -16,6 +16,7 @@ while True:
     print('''
     help              help screen
     print #<text>     print <text> onto screen
+    file.print #<f>   print contents of file <f>
     clr               clear screen
     exit              exit BackTick command line
     ''')
@@ -24,6 +25,8 @@ while True:
     print(a[1])
   elif a[0] == 'clr':
     clr()
+  elif a[0] == 'file.print':
+    read(a[1])
   elif a[0] == 'exit':
     clr()
     break
