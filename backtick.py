@@ -3,7 +3,7 @@
 
 import os
 import time
-from cmd import command
+from cmd import command, read
 
 def clr():
   os.system('clr')
