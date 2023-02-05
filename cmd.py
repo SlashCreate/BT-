@@ -15,3 +15,9 @@ def read(file):
   for line in myfile:
     print(line)
   myfile.close()
+
+def setting():
+  def read(file):
+  myfile = open(file, "r")
+  return myfile.read().split('\n')[0]
+  myfile.close()
