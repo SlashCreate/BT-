@@ -17,7 +17,6 @@ def read(file):
   myfile.close()
 
 def setting():
-  def read(file):
-  myfile = open(file, "r")
+  myfile = open(info/setting, "r")
   return myfile.read().split('\n')[0]
   myfile.close()
