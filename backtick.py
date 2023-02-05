@@ -3,21 +3,14 @@
 
 import os
 import time
+from cmd import command
 
 def clr():
   os.system('clr')
-  
-def command(cmd, args):
-  # Use for custom commands
-  # example:
-  # custom #hello
-  
-  if cmd == 'custom':
-    # args[0] is the same as command name
-    print(args[1])
     
 while True:
   a = input('>> ').split(' #')
+  command(a[0], a)
   if a[0] == 'help':
     # help screen
     print('''
